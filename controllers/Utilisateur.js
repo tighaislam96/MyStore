@@ -1,6 +1,5 @@
-// Amener le modele de l'utilisateur avec les relations
-import { Utilisateur } from "../models/relation.js";
-
+// Amener le modele de l'utilisateur avec les relation
+import {Utilisateur} from "../models/Relation.js";
 //Controller
 export const utilisateurList = async (req, res) => {
 
@@ -53,3 +52,4 @@ export const removeUtilisateur = async (req, res) => {
         res.status(400).json({ message: error.message });
     }
 }
+
